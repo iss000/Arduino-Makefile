@@ -101,10 +101,10 @@ elif args.caterina:
     ser = serial.Serial(args.port[0], 57600)
     ser.close()
 
-    if pyserial_version < 3:
-      ser.setBaudrate (1200)
-    else:
-      ser.baudrate = 1200
+    #if pyserial_version < 3:
+    #ser.setBaudrate (1200)
+    #else:
+    ser.baudrate = 1200
 
     ser.open()
     ser.setRTS(True)  # RTS line needs to be held high and DTR low
