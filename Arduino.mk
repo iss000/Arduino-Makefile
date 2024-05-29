@@ -63,7 +63,7 @@
 #
 # On Windows declare this environmental variables using the windows
 # configuration options or Cygwin .bashrc. Control Panel > System > Advanced system settings
-# The paths must use Unix style forward slash and not have any spaces 
+# The paths must use Unix style forward slash and not have any spaces
 # or escape charactors. One must use a symbolic link if the path does
 # contain spaces.
 #
@@ -924,7 +924,7 @@ ifeq ($(strip $(CHK_SOURCES)),)
                 $(call show_config_info,No .pde or .ino files found. If you are compiling .c or .cpp files then you need to explicitly include Arduino header files)
             else
                 #TODO: Support more than one file. https://github.com/sudar/Arduino-Makefile/issues/49
-                $(error Need exactly one .pde or .ino file. This makefile doesn\'t support multiple .ino/.pde files yet)
+                $(error Need exactly one .pde or .ino file. This makefile doesn`t support multiple .ino/.pde files yet)
             endif
         endif
 
